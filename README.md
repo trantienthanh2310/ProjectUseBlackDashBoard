@@ -15,5 +15,5 @@ Blog này tui sẽ giới thiệu anh em sơ về tổng quan laravel qua 1 proj
 
 ### Contact with me
 
-- [Facebook](https://www.facebook.com/tienthanh2310/)
+- [Facebook](https://www.facebook.com/)
 
