@@ -49,9 +49,13 @@ class Users extends Authenticatable
     {
         return $this->hasMany(Post::class,'user_id','id');
     }
+    // public function cart()
+    // {
+    //     return $this->hasOne(Cart::class,'user_id','id');
+    // }
     public function cart()
     {
-        return $this->hasOne(Cart::class,'user_id','id');
+        return $this->hasMany(Cart::class);
     }
 
 }

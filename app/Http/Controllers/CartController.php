@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cart;
+use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
@@ -12,11 +13,14 @@ class CartController extends Controller
 {
     public function index()
     {
-        $carts = Cart::all();
+        $carts = Cart::where('user_id',auth()->user()->id)->get();
         return view('cart.index',compact('carts'));
- 
+    
     }
+ 
+    
    
+    
     public function addToCart($id)
     {
         if(auth()->user()) 
@@ -28,7 +32,6 @@ class CartController extends Controller
             ];
             Cart::updateOrCreate($data);
             Session::flash('status','Add to cart successfulliy');
-            
             return redirect('product');
         }else{
             return redirect(route('login'));

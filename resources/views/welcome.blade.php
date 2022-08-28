@@ -1,17 +1,19 @@
-@extends('layouts.app', ['pageSlug' => 'welcome'])
+@extends('layouts.appUSER', ['pageSlug' => 'welcome'])
 
 @section('content')
-    <div class="header py-7 py-lg-8">
+    <div class="header left-10 py-5 py-lg-8">
         <div class="container">
             <div class="header-body text-center mb-7">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-6">
-                        <h1 class="text-white">{{ __('Welcome!') }}</h1>
-                        <p class="text-lead text-light">
-                            {{ __('Use Black Dashboard theme to create a great project.') }}
-                        </p>
+                        <a href="">
+                        <h1 class="text-white">{{ __('Fhnaht') }}</h1>
+                        </a>
+                        <a href="">
+                                <img src="https://bcp.cdnchinhphu.vn/Uploaded/truonggiangthanh/2020_12_16/ttxvn_apple.jpg">
+                        </a>
                     </div>
-                </div>
+                </pi>
             </div>
         </div>
     </div>

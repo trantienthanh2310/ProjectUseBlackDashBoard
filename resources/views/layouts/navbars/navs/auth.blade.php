@@ -9,7 +9,14 @@
                     <span class="navbar-toggler-bar bar3"></span>
                 </button>
             </div>
-            <a class="navbar-brand" href="">{{ $page ?? __('Dashboard') }}</a>
+            <ul class="navbar-nav ml-auto">
+            <li class="">
+            <a class="" href="/">Fhnaht Shop</a>
+            </li>
+            <li class="">
+            <a class=""href="/product">Product</a>
+            </li>
+            </ul>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -18,11 +25,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="{{ route('welcome') }}" class="nav-link text-primary">
                         <i class="tim-icons icon-minimal-left"></i> {{ __('Back to Homepage') }}
                     </a>
-                </li>
+                </li> -->
                 <li class="search-bar input-group">
                     <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split"></i>
                         <span class="d-lg-none d-md-block">{{ __('Search') }}</span>

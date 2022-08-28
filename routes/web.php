@@ -43,7 +43,7 @@ Route::get('/dashboard', function (Request $request) {
     return view('dashboard');
 })->name('dashboard');
 
-Route::prefix('users')->name('users.')->group(function() {
+Route::prefix('users')->middleware('auth')->name('users.')->group(function() {
     Route::get('/',[UsersController::class,'index'])->name('index');
     Route::get('getpost',[UsersController::class,'getPost'])->name('getPost');
     Route::get('edit',[ProfileController::class,'edit'])->name('editProfile');
@@ -53,13 +53,12 @@ Route::prefix('users')->name('users.')->group(function() {
     Route::get('addToCart/{id}',[CartController::class,'addToCart'])->name('addToCart');
     Route::post('update-cart',[CartController::class,'updateToCart'])->name('updateToCart');
 });
-Route::prefix('admin')->name('admin.')->group(function() {
+Route::prefix('admin')->middleware('auth','is_admin')->name('admin.')->group(function() {
     Route::get('/',[AdminController::class,'index'])->name('index');
 });
 Route::prefix('product')->name('product.')->group(function() {
     Route::get('/',[ProductController::class,'index'])->name('index');
     Route::get('detail/product{id}',[ProductController::class,'detail'])->name('detail');
-
 });
 
 
