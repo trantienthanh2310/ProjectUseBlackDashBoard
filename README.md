@@ -7,15 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Hello Anh Em
+## Intro
 
 Blog này tui sẽ giới thiệu anh em sơ về tổng quan laravel qua 1 project sử dụng template của BlackDashBoard
 
 ------------------------------------------------------------------ Ok đi nào ------------------------------------------------------
 
-### Premium Partners
+### Contact with me
 
-- **[Vehikl](https://vehikl.com/)**
+- [Facebook](https://www.facebook.com/tienthanh2310/)
 - **[Tighten Co.](https://tighten.co)**
 - **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
 - **[64 Robots](https://64robots.com)**
